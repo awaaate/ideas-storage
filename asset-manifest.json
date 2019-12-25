@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ideas-storage/static/css/main.ba5cce99.chunk.css",
-    "main.js": "/ideas-storage/static/js/main.96111de8.chunk.js",
-    "main.js.map": "/ideas-storage/static/js/main.96111de8.chunk.js.map",
+    "main.css": "/ideas-storage/static/css/main.e85de0f5.chunk.css",
+    "main.js": "/ideas-storage/static/js/main.4d61f67f.chunk.js",
+    "main.js.map": "/ideas-storage/static/js/main.4d61f67f.chunk.js.map",
     "runtime-main.js": "/ideas-storage/static/js/runtime-main.9ca79d44.js",
     "runtime-main.js.map": "/ideas-storage/static/js/runtime-main.9ca79d44.js.map",
     "static/js/2.bf61b328.chunk.js": "/ideas-storage/static/js/2.bf61b328.chunk.js",
     "static/js/2.bf61b328.chunk.js.map": "/ideas-storage/static/js/2.bf61b328.chunk.js.map",
     "index.html": "/ideas-storage/index.html",
-    "precache-manifest.532dccbc124923e060fe51e7457d01bb.js": "/ideas-storage/precache-manifest.532dccbc124923e060fe51e7457d01bb.js",
+    "precache-manifest.75b3208329b68182a728c46a226adac4.js": "/ideas-storage/precache-manifest.75b3208329b68182a728c46a226adac4.js",
     "service-worker.js": "/ideas-storage/service-worker.js",
-    "static/css/main.ba5cce99.chunk.css.map": "/ideas-storage/static/css/main.ba5cce99.chunk.css.map",
+    "static/css/main.e85de0f5.chunk.css.map": "/ideas-storage/static/css/main.e85de0f5.chunk.css.map",
     "static/js/2.bf61b328.chunk.js.LICENSE": "/ideas-storage/static/js/2.bf61b328.chunk.js.LICENSE",
     "static/media/Icon ionic-md-open.ca966a1c.svg": "/ideas-storage/static/media/Icon ionic-md-open.ca966a1c.svg",
     "static/media/logo.svg": "/ideas-storage/static/media/logo.5d5d9eef.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.9ca79d44.js",
     "static/js/2.bf61b328.chunk.js",
-    "static/css/main.ba5cce99.chunk.css",
-    "static/js/main.96111de8.chunk.js"
+    "static/css/main.e85de0f5.chunk.css",
+    "static/js/main.4d61f67f.chunk.js"
   ]
 }
