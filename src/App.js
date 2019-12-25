@@ -1,26 +1,46 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {getData} from './firebase/firebase.functions';
+
+import IdeaForm from './components/idea-form/idea-form.component';
+import IdeasList from './components/ideas-list/ideas-list.component';
+
+class App extends React.Component{
+  constructor(props){
+    super(props);
+
+    this.state = {
+      ideas: []
+    }
+  }
+  async componentDidMount(){
+    const {data, collectionRef} = await getData()
+
+    collectionRef.onSnapshot(snapshot =>{
+
+      let ideas = []
+      snapshot.docs.forEach(docSnapshot =>{
+
+        ideas.push(docSnapshot.data())
+      })
+
+      this.setState({ideas})
+    })
+    this.setState({ideas: data})
+  }
+  
+  render(){
+    const {deas} = this.state
+    return(
+      <div className="App">
+        <IdeaForm/>
+        <IdeasList ideas={this.state.ideas}/>
+      </div>
+
+    )
+  }
 }
 
 export default App;
